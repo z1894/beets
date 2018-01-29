@@ -40,7 +40,7 @@ def build_manpages():
         print("Could not build manpages (make man failed)!", file=sys.stderr)
         return
     finally:
-        os.chdir(curdir)
+        os.chdir(curdir)c
 
     # Copy resulting manpages.
     mandir = os.path.join(os.path.dirname(__file__), 'man')
